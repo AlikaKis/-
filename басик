@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int  N, M, X, Y;
+    cin >> N >> M >> X >> Y;
+    if ((N-X > X) && (M-Y > Y)) {
+        cout << "(sqrt(X^2+Y^2)";
+    }
+       else if ((N-X < X) && (M-Y < Y)) {
+        cout << "(sqrt((N-X)^2+(M-Y)^2))";
+       }
+           else if  ((N-X < X) && (M-Y > Y)) {
+                cout << "(sqrt((N-X)^2+Y^2))";
+           }
+               else cout << "(sqrt(X^2+(M-Y)^2))";
+  return 0;
+}
+//это я решала задачу про бассейн
